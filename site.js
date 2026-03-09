@@ -3,8 +3,8 @@ const content = {
     nav: { home: 'Home', about: 'About', product: 'Product', quality: 'Quality', distributor: 'Distributor', contact: 'Contact' },
     hero: {
       badge: 'Premium Herbal Wellness · Global Distribution',
-      title: 'Herbal wellness, positioned for global growth.',
-      subtitle: 'Fengze Wellness (HK) Limited is building a premium herbal wellness brand around Cynomorium Herba Pills, with a clear focus on product positioning, quality narrative, and global distributor development.',
+      title: 'Premium herbal wellness for modern global markets.',
+      subtitle: 'Fengze Wellness (HK) Limited presents Cynomorium Herba Pills through a premium brand lens: heritage-inspired, visually refined, and structured for global distributor development.'
       ctaPrimary: 'Become a Distributor', ctaSecondary: 'Explore the Product',
       point1: 'Bilingual website', point2: 'Editable content', point3: 'Built for distributor leads',
       cardTitle: 'What this first version already supports',
@@ -54,8 +54,8 @@ const content = {
     nav: { home: '首页', about: '公司', product: '产品', quality: '质量', distributor: '招商', contact: '联系' },
     hero: {
       badge: '高端草本健康 · 全球招商',
-      title: '为全球增长而设计的草本健康品牌网站。',
-      subtitle: 'Fengze Wellness（香港豐澤健康有限公司）第一版网站将围绕品牌展示、产品介绍和全球招商三件事展开，重点突出产品定位、质量叙事与合作入口。',
+      title: '面向现代全球市场的高端草本健康品牌。',
+      subtitle: 'Fengze Wellness（香港豐澤健康有限公司）将锁阳丸以更高端、更克制、更国际化的方式呈现出来，兼顾品牌形象、产品表达与全球招商。'
       ctaPrimary: '申请成为代理商', ctaSecondary: '查看产品信息',
       point1: '中英双语', point2: '内容可继续编辑', point3: '适合承接招商线索',
       cardTitle: '这版网站已经覆盖的核心能力',

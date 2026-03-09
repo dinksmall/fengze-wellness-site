@@ -30,7 +30,8 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
+    <section id="home" class="hero hero-luxury">
+      <div class="hero-bg"></div>
       <div class="container hero-grid">
         <div>
           <span class="badge" data-i18n="hero.badge"></span>
@@ -46,8 +47,8 @@
             <span data-i18n="hero.point3"></span>
           </div>
         </div>
-        <div class="hero-visual">
-          <img class="hero-image" src="./assets/product-front.jpg" alt="Cynomorii Herba product packaging" />
+        <div class="hero-visual luxury-frame">
+          <img class="hero-image cover-fit" src="./assets/hero-cover.png" alt="Cynomorii Herba product design cover" />
           <div class="hero-card overlay-card">
             <h3 data-i18n="hero.cardTitle"></h3>
             <ul id="hero-card-list"></ul>
@@ -57,14 +58,19 @@
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container two-col">
+    <section id="about" class="section story-section">
+      <div class="container two-col story-layout">
         <div>
           <p class="eyebrow" data-i18n="about.eyebrow"></p>
           <h2 data-i18n="about.title"></h2>
           <p data-i18n="about.body1"></p>
           <p data-i18n="about.body2"></p>
         </div>
+        <div class="story-card">
+          <img src="./assets/story.webp" alt="Herbal story illustration" class="section-image story-image" />
+        </div>
+      </div>
+      <div class="container mt-32">
         <div class="card">
           <h3 data-i18n="about.highlightsTitle"></h3>
           <ul id="about-highlights"></ul>
@@ -113,7 +119,7 @@
             <a class="btn secondary" href="./public/Cynomorii-Herba-Pills-ASH24-0033163-01.pdf" target="_blank" rel="noreferrer" data-i18n="quality.downloadCta"></a>
           </div>
           <div class="card image-card">
-            <img src="./assets/product-packaging.jpg" alt="Product packaging" class="section-image" />
+            <img src="./assets/forest.webp" alt="Herbal sourcing visual" class="section-image" />
           </div>
         </div>
       </div>
