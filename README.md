@@ -1,48 +1,54 @@
-# Fengze Wellness Website Draft
+# Cynomorium Herba Pills / 锁阳丸 Website
 
-This is a simple bilingual website draft for **Fengze Wellness (HK) Limited**.
+Premium single-product brand website for distributor and partnership presentation.
 
-## What it includes
-- English + Chinese landing page
-- brand presentation
-- product positioning for Cynomorium Herba Pills / 鎖陽丸
-- quality / trust section
-- distributor section
-- contact section
+## Project Positioning
+- Main audience: distributors, channel partners, cooperation partners
+- Secondary audience: interested end consumers
+- Core objective: brand trust + product understanding + partnership conversion
+- Not an ecommerce store in this version
 
-## How to edit
-You can edit the following files directly:
+## Sitemap / Section Structure
+Single-page layout with anchor navigation:
 
-- `index.html` → page structure
-- `styles.css` → design and layout
-- `site.js` → English / Chinese text content
+1. `Home`
+2. `Product`
+3. `Why It's Different`
+4. `Quality & Craft`
+5. `Brand Story`
+6. `Partnership / Distributor`
+7. `FAQ`
+8. `Contact`
 
-Most text is inside `site.js` under:
-- `content.en`
-- `content.zh`
+## Core Files
+- `index.html` -> full page structure and content blocks
+- `styles.css` -> visual language, responsive layout, typography, motion
+- `site.js` -> nav interaction, reveal animation, form behavior, image fallback
+- `assets/` -> product photos used in hero and content modules
+- `public/favicon.svg` -> brand-ready favicon
+- `public/placeholder-herbal.svg` -> fallback image placeholder
 
-So if you want to change product wording later, usually you only need to edit that one file.
+## Brand / Copy Direction
+- English-first with key Chinese subtitles
+- Premium, restrained, partnership-oriented
+- Public compliance-safe wording
+- Focus on men’s vitality, stamina, confidence, quality and craft
 
-## Important publishing rule
-Do **not** publish sensitive internal files such as:
-- IDs / passports
-- bank statements
-- contracts
-- internal invoices
-- unredacted certificates that expose private data
+## Compliance Notes (Public-Site Safe)
+Avoid direct disease-treatment claims and sensitive medical/sexual performance claims in public sections.
 
-## Suggested next steps
-1. add real logo
-2. add product pack shots
-3. add curated testing summary
-4. replace Telegram contact with your preferred public username/link
-5. connect to a domain later
-6. deploy to Cloudflare Pages / Netlify / Vercel
+## Inquiry Form
+Current form behavior in `site.js`:
+- validates required fields
+- opens default email client with pre-filled distributor inquiry
+- target email: `pityhappy@gmail.com`
 
-## Deployment (simple)
-This site is static, so you can deploy by uploading the folder to:
-- Cloudflare Pages
-- Netlify
-- Vercel
+This can be replaced later with CRM/API endpoints.
 
-No traditional server is required for the first version.
+## Future Modules Reserved
+- Distributor portal
+- Shop / order entry
+- Regional partner toolkit downloads
+
+## Local Preview
+Open `index.html` directly in browser, or run any static server.

@@ -3,167 +3,549 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fengze Wellness (HK) Limited</title>
-  <meta name="description" content="Fengze Wellness (HK) Limited — premium herbal wellness products and global distributor opportunities." />
+  <title>Cynomorium Herba Pills | Premium Herbal Product for Distribution Partners</title>
+  <meta name="description" content="Cynomorium Herba Pills is a premium whole-plant, honey-based herbal product created for mature men's wellness positioning and premium channel distribution." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cynomorium Herba Pills" />
+  <meta property="og:description" content="A single hero herbal product with a whole-plant route and premium channel fit for distribution partners." />
+  <meta property="og:image" content="./assets/product-front.jpg?v=20260420" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cynomorium Herba Pills" />
+  <meta name="twitter:description" content="Premium whole-plant herbal positioning for distributor-led markets." />
+  <meta name="twitter:image" content="./assets/product-front.jpg?v=20260420" />
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+  <link rel="apple-touch-icon" href="./public/favicon.svg" />
   <link rel="stylesheet" href="./styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Cynomorium Herba Pills",
+      "brand": {
+        "@type": "Brand",
+        "name": "Fengze Wellness"
+      },
+      "description": "A premium whole-plant herbal product in a honey-based pill format for mature men's wellness support.",
+      "category": "Herbal Wellness Supplement",
+      "additionalProperty": [
+        {"@type": "PropertyValue", "name": "Format", "value": "Honey-based pill"},
+        {"@type": "PropertyValue", "name": "Route", "value": "Whole-plant route"},
+        {"@type": "PropertyValue", "name": "Net Content", "value": "8g per box / 1 pill"}
+      ]
+    }
+  </script>
 </head>
 <body>
+  <div class="page-bg"></div>
+
   <header class="site-header">
-    <div class="container nav">
-      <div>
-        <div class="brand">Fengze Wellness</div>
-        <div class="brand-sub">香港豐澤健康有限公司</div>
-      </div>
-      <nav>
-        <a href="#home" data-i18n="nav.home"></a>
-        <a href="#about" data-i18n="nav.about"></a>
-        <a href="#product" data-i18n="nav.product"></a>
-        <a href="#quality" data-i18n="nav.quality"></a>
-        <a href="#distributor" data-i18n="nav.distributor"></a>
-        <a href="#contact" data-i18n="nav.contact"></a>
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Fengze Wellness Home">
+        <span class="brand-mark">FZ</span>
+        <span>
+          <strong>Fengze Wellness</strong>
+          <em>Cynomorium Herba Pills</em>
+        </span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#different">Why It’s Different</a>
+        <a href="#quality">Quality</a>
+        <a href="#story">Story</a>
+        <a href="#partnership">Partnership</a>
+        <a href="#faq">FAQ</a>
       </nav>
-      <div class="lang-switch">
-        <button data-lang="en">EN</button>
-        <button data-lang="zh">中文</button>
+      <div class="nav-actions">
+        <a class="btn small ghost" href="#partnership-form">Request Deck</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero hero-luxury">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div>
-          <span class="badge" data-i18n="hero.badge"></span>
-          <h1 data-i18n="hero.title"></h1>
-          <p class="hero-sub" data-i18n="hero.subtitle"></p>
+    <section id="home" class="hero section">
+      <div class="container hero-layout reveal">
+        <div class="hero-copy">
+          <p class="kicker">Single Hero Product · Distributor Ready</p>
+          <h1>Cynomorium Herba Pills</h1>
+          <p class="lead">
+            A premium herbal product with a clear identity and a route you can explain in one conversation.
+          </p>
+          <p class="hero-value">
+            Single hero identity, whole-plant route, and a distinct honey-based format create stronger product recall and clearer premium channel positioning.
+          </p>
+          <p class="hero-note">Designed for mature men’s wellness categories and selective distribution partners.</p>
           <div class="cta-row">
-            <a class="btn primary" href="#distributor" data-i18n="hero.ctaPrimary"></a>
-            <a class="btn secondary" href="#product" data-i18n="hero.ctaSecondary"></a>
+            <a class="btn gold" href="#partnership-form">Request Partnership Deck</a>
+            <a class="btn dark" href="#product">Explore the Product</a>
+            <a class="text-link hero-link" href="#partnership">Distributor Inquiry</a>
           </div>
-          <div class="mini-points">
-            <span data-i18n="hero.point1"></span>
-            <span data-i18n="hero.point2"></span>
-            <span data-i18n="hero.point3"></span>
-          </div>
+          <ul class="hero-points">
+            <li>Whole-Plant Route</li>
+            <li>Honey-Based Format</li>
+            <li>Premium Channel Fit</li>
+          </ul>
         </div>
-        <div class="hero-visual luxury-frame">
-          <img class="hero-image cover-fit" src="./assets/hero-cover.png" alt="Cynomorii Herba product design cover" />
-          <div class="hero-card overlay-card">
-            <h3 data-i18n="hero.cardTitle"></h3>
-            <ul id="hero-card-list"></ul>
-            <p class="note" data-i18n="hero.note"></p>
+
+        <div class="hero-visual">
+          <div class="visual-main surface-frame safe-frame">
+            <img class="safe-crop safe-crop-pack" src="./assets/product-front.jpg?v=20260420" data-fallback="./public/placeholder-herbal.svg" alt="Cynomorium Herba Pills premium packaging" />
           </div>
+          <div class="visual-mini surface-frame pill-focus-frame">
+            <img class="pill-focus-image" src="./assets/product-main.jpg?v=20260420" data-fallback="./public/placeholder-herbal.svg" alt="Cynomorium Herba Pills pill and open shell detail" />
+          </div>
+          <aside class="spec-card glass">
+            <h2>Product Snapshot <span>At a Glance</span></h2>
+            <dl>
+              <div><dt>Format</dt><dd>Honey-Based Pill</dd></div>
+              <div><dt>Content</dt><dd>1 Pill per Box · 8g</dd></div>
+              <div><dt>Route</dt><dd>Whole-Plant, Non-Extract</dd></div>
+              <div><dt>Positioning</dt><dd>Premium Men’s Wellness</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container distributor-strip reveal">
+        <header>
+          <p class="kicker">Partner Lens</p>
+          <h2>Why Distributors Keep Reading</h2>
+        </header>
+        <div class="strip-grid">
+          <article>
+            <h3>Single-SKU Focus</h3>
+            <p>Lower onboarding complexity, faster channel rollout.</p>
+          </article>
+          <article>
+            <h3>Stronger Product Identity</h3>
+            <p>Format, route, and presentation are easier to remember and easier to sell in.</p>
+          </article>
+          <article>
+            <h3>Premium Presentation Potential</h3>
+            <p>Built for curated shelves, not commodity supplement placement.</p>
+          </article>
+          <article>
+            <h3>Clearer Channel Positioning</h3>
+            <p>Helps partners avoid price-only competition and build value-led stories.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section story-section">
-      <div class="container two-col story-layout">
-        <div>
-          <p class="eyebrow" data-i18n="about.eyebrow"></p>
-          <h2 data-i18n="about.title"></h2>
-          <p data-i18n="about.body1"></p>
-          <p data-i18n="about.body2"></p>
+    <section id="product" class="section section-panel">
+      <div class="container reveal">
+        <div class="section-head">
+          <p class="kicker">Product</p>
+          <h2>A Product with Clear Market Identity</h2>
+          <p>
+            Cynomorium Herba Pills is presented as a premium product, not a generic supplement listing.
+            Its value comes from route clarity, format recognition, and a stronger sell-in narrative for partners.
+          </p>
         </div>
-        <div class="story-card">
-          <img src="./assets/story.webp" alt="Herbal story illustration" class="section-image story-image" />
+
+        <div class="product-opening">
+          <figure class="product-hero-image surface-frame pill-focus-frame">
+            <img class="pill-focus-image" src="./assets/product-main.jpg?v=20260420" data-fallback="./public/placeholder-herbal.svg" alt="Cynomorium Herba Pills real product form in open shell" />
+          </figure>
+          <article class="card product-intro">
+            <h3>What It Is</h3>
+            <p>
+              A honey-based herbal pill made through a whole-plant process.
+              Positioned for mature men’s vitality, confidence, and everyday wellness support.
+            </p>
+            <p class="sub-value-line">Not a broad catalog SKU. A single hero product built for sharper market identity.</p>
+            <p class="sub-value-line">The packaging supports presentation. The product itself remains the visual center.</p>
+          </article>
         </div>
-      </div>
-      <div class="container mt-32">
-        <div class="card">
-          <h3 data-i18n="about.highlightsTitle"></h3>
-          <ul id="about-highlights"></ul>
+
+        <div class="product-story-grid">
+          <article>
+            <h3>Whole-Plant Route</h3>
+            <p>
+              The route follows drying, grinding, honey blending, pill forming, steaming, drying, and packaging.
+              It gives partners a fuller origin story than extract-heavy category narratives.
+            </p>
+          </article>
+          <article>
+            <h3>Why This Format Works</h3>
+            <p>
+              In premium wellness channels, format and presentation shape market identity.
+              The honey-based profile is more distinctive than standard capsule or tablet presentation.
+            </p>
+          </article>
+          <article>
+            <h3>Built for Premium Positioning</h3>
+            <p>
+              1 pill per box (8g net content) supports focused market entry, clearer messaging, and selective channel strategy.
+            </p>
+          </article>
+        </div>
+
+        <div class="product-bottom">
+          <div class="base-spec card">
+            <h3>Product Snapshot</h3>
+            <div class="spec-table">
+              <div><strong>Name</strong><span>Cynomorium Herba Pills</span></div>
+              <div><strong>Format</strong><span>Honey-Based Pill</span></div>
+              <div><strong>Net Content</strong><span>8g per box (1 pill)</span></div>
+              <div><strong>Route</strong><span>Whole-Plant Route</span></div>
+              <div><strong>Category</strong><span>Premium Herbal Wellness Support</span></div>
+              <div><strong>Positioning</strong><span>Mature men’s vitality and confidence support</span></div>
+            </div>
+          </div>
+          <aside class="card product-cta">
+            <figure class="product-pack-support surface-frame safe-frame">
+              <img class="safe-crop safe-crop-pack" src="./assets/product-front.jpg?v=20260420" data-fallback="./public/placeholder-herbal.svg" alt="Cynomorium Herba Pills packaging support visual" />
+            </figure>
+            <h3>Ready for Channel Discussion?</h3>
+            <p>
+              Request the deck for product narrative, channel-fit guidance, and partnership next steps.
+            </p>
+            <a class="btn gold" href="#partnership-form">Request Partnership Deck</a>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section id="product" class="section alt">
-      <div class="container">
-        <p class="eyebrow" data-i18n="product.eyebrow"></p>
-        <h2 data-i18n="product.title"></h2>
-        <p class="section-intro" data-i18n="product.intro"></p>
-        <div class="grid-3">
-          <div class="card"><h3 data-i18n="product.card1Title"></h3><p data-i18n="product.card1Body"></p></div>
-          <div class="card"><h3 data-i18n="product.card2Title"></h3><p data-i18n="product.card2Body"></p></div>
-          <div class="card"><h3 data-i18n="product.card3Title"></h3><p data-i18n="product.card3Body"></p></div>
+    <section id="different" class="section">
+      <div class="container reveal">
+        <div class="section-head narrow">
+          <p class="kicker">Differentiation</p>
+          <h2>Why It Stands Apart in Premium Wellness</h2>
+          <p>
+            This is not built to blend into standard supplement shelves.
+            It is built for clear market identity, format distinction, and stronger channel fit.
+          </p>
+          <div class="stands-apart-list">
+            <p>Single hero product with focused market recall.</p>
+            <p>Whole-plant route with richer ingredient-story depth.</p>
+            <p>Honey-based format with stronger shelf recognition.</p>
+          </div>
         </div>
-        <div class="split mt-32">
-          <div class="card">
-            <h3 data-i18n="product.featuresTitle"></h3>
-            <ul id="product-features"></ul>
-          </div>
-          <div class="card warning-card">
-            <h3 data-i18n="product.complianceTitle"></h3>
-            <p data-i18n="product.complianceBody"></p>
-            <ul id="product-compliance"></ul>
-          </div>
+
+        <div class="different-primary">
+          <article class="feature-block card">
+            <h3>Whole-Plant Route with a Clear Story</h3>
+            <p>
+              The product follows a whole-plant route rather than an extract-first concept.
+              That gives distributors a cleaner story for partner and buyer conversations.
+            </p>
+          </article>
+          <article class="feature-block card">
+            <h3>Honey-Based Format with Strong Recall</h3>
+            <p>
+              The format is visually and structurally distinct from common capsule and tablet offerings,
+              helping it hold a clearer place in premium channel portfolios.
+            </p>
+          </article>
+        </div>
+
+        <div class="different-secondary">
+          <article class="card"><h3>Refined Presentation</h3><p>Premium visual language supports stronger shelf value and cleaner positioning.</p></article>
+          <article class="card"><h3>Heritage-Informed Design</h3><p>Traditional inspiration delivered through an international brand standard.</p></article>
+          <article class="card"><h3>Premium Channel Fit</h3><p>Well suited for curated retail, private channels, and value-led distribution.</p></article>
+          <article class="card"><h3>Simpler Distributor Training</h3><p>A single hero product improves message consistency across sales teams.</p></article>
+        </div>
+
+        <p class="different-summary">
+          Clear route, clear format, clear positioning. That is what turns product distinction into commercial usefulness.
+        </p>
+        <a class="btn line" href="#partnership">View Partnership Path</a>
+      </div>
+    </section>
+
+    <section id="quality" class="section section-panel quality-section">
+      <div class="container reveal">
+        <div class="section-head quality-head">
+          <p class="kicker">QUALITY & CRAFT</p>
+          <h2>A Clear Process. A Clear Product Story.</h2>
+          <p>
+            This section is built to make the product route easy to understand and easy to explain.
+            Clear process communication helps partners present the product with confidence in premium channels.
+          </p>
+        </div>
+
+        <ol class="process-flow quality-process">
+          <li><span>01</span><strong>Raw Materials</strong><p>Whole-plant inputs selected for route consistency.</p></li>
+          <li><span>02</span><strong>Drying</strong><p>Stabilizes plant character before further handling.</p></li>
+          <li><span>03</span><strong>Grinding</strong><p>Creates a uniform base for honey integration.</p></li>
+          <li><span>04</span><strong>Honey Blending</strong><p>Forms the signature product matrix.</p></li>
+          <li><span>05</span><strong>Pill Forming</strong><p>Turns the blend into a distinct product format.</p></li>
+          <li><span>06</span><strong>Steaming</strong><p>Refines product structure for a consistent finish.</p></li>
+          <li><span>07</span><strong>Final Drying & Packaging</strong><p>Locks presentation quality and shelf readiness.</p></li>
+        </ol>
+
+        <div class="quality-grid quality-value-grid">
+          <article class="card quality-value-card">
+            <h3>Whole-Plant Process Clarity</h3>
+            <p>
+              The whole-plant route gives the product a clearer identity from source to final format.
+              This creates a stronger origin story than generic ingredient-only claims.
+            </p>
+          </article>
+          <article class="card quality-value-card">
+            <h3>Quality Communication That Builds Trust</h3>
+            <p>
+              Public communication stays factual and restrained: process, consistency, and presentation.
+              That clarity helps partners build confidence without overstatement.
+            </p>
+          </article>
+          <article class="card quality-value-card">
+            <h3>Built for Confident Channel Storytelling</h3>
+            <p>
+              A clear route and distinct format make distributor conversations easier:
+              what it is, why it is different, and why it fits premium channel positioning.
+            </p>
+          </article>
+          <figure class="card quality-support">
+            <div class="quality-support-media surface-frame pill-focus-frame">
+              <img class="quality-support-img" src="./assets/product-main.jpg?v=20260420" data-fallback="./public/placeholder-herbal.svg" alt="Cynomorium Herba Pills real product detail" />
+            </div>
+            <figcaption>Real product detail, presented as supporting evidence for process-based trust conversations.</figcaption>
+          </figure>
+        </div>
+
+        <div class="card quality-close">
+          <p>A clearer process supports a clearer premium story. When product logic is easier to explain, market trust becomes easier to build.</p>
+          <a class="btn line" href="#partnership-form">Request Partnership Deck</a>
         </div>
       </div>
     </section>
 
-    <section id="quality" class="section">
-      <div class="container">
-        <p class="eyebrow" data-i18n="quality.eyebrow"></p>
-        <h2 data-i18n="quality.title"></h2>
-        <p class="section-intro" data-i18n="quality.intro"></p>
-        <div class="grid-3">
-          <div class="card"><h3 data-i18n="quality.q1Title"></h3><p data-i18n="quality.q1Body"></p></div>
-          <div class="card"><h3 data-i18n="quality.q2Title"></h3><p data-i18n="quality.q2Body"></p></div>
-          <div class="card"><h3 data-i18n="quality.q3Title"></h3><p data-i18n="quality.q3Body"></p></div>
+    <section id="story" class="section">
+      <div class="container story-grid reveal">
+        <article>
+          <p class="kicker">Story</p>
+          <h2>Heritage-Inspired, Market-Ready</h2>
+          <p>
+            Fengze Wellness was built on one idea: heritage-inspired herbal products can be presented with modern,
+            international brand standards.
+          </p>
+          <p>
+            We start with one hero product to keep the message sharp: clear route, distinct format, and premium channel fit.
+          </p>
+          <blockquote>
+            "When product identity is clear, channel growth becomes easier to sustain."
+          </blockquote>
+        </article>
+
+        <article class="card story-card">
+          <h3>Our Principles</h3>
+          <ul>
+            <li>Premium positioning over price competition</li>
+            <li>Clarity and restraint over overstatement</li>
+            <li>Selective partnerships over uncontrolled rollout</li>
+            <li>Long-term trust over short-term noise</li>
+          </ul>
+          <a class="btn line" href="#partnership">Explore Partnership</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="partnership" class="section section-panel">
+      <div class="container reveal">
+        <div class="section-head">
+          <p class="kicker">Partnership</p>
+          <h2>Built for Distributor-Led Growth</h2>
+          <p>
+            Cynomorium Herba Pills is built to be easier to place, easier to explain, and easier to differentiate
+            in premium wellness channels.
+          </p>
+          <div class="partner-matters-list">
+            <p>Distinct products are easier to position with confidence.</p>
+            <p>Clear identity shortens sell-in conversations with channel buyers.</p>
+            <p>Single-SKU focus helps partners concentrate resources and scale deliberately.</p>
+          </div>
         </div>
-        <div class="split mt-32">
-          <div class="card">
-            <h3 data-i18n="quality.downloadTitle"></h3>
-            <p data-i18n="quality.downloadBody"></p>
-            <a class="btn secondary" href="./public/Cynomorii-Herba-Pills-ASH24-0033163-01.pdf" target="_blank" rel="noreferrer" data-i18n="quality.downloadCta"></a>
-          </div>
-          <div class="card image-card">
-            <img src="./assets/forest.webp" alt="Herbal sourcing visual" class="section-image" />
-          </div>
+
+        <div class="partnership-layout">
+          <article class="card partner-lead">
+            <h3>Why It Works for Distributors</h3>
+            <ul>
+              <li>Single hero product with clear market identity</li>
+              <li>Distinct format that avoids generic category overlap</li>
+              <li>Premium presentation for higher-value channel placement</li>
+              <li>Whole-plant route that supports a credible brand story</li>
+            </ul>
+          </article>
+          <article class="card partner-lead">
+            <h3>Best-Fit Channels</h3>
+            <ul>
+              <li>Premium health and wellness retail</li>
+              <li>Boutique stores and private-member channels</li>
+              <li>Men’s wellness advisory and clinic channels</li>
+              <li>Regional distributors and cross-border partners</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="partner-grid">
+          <article class="card">
+            <h3>Market Entry Approach</h3>
+            <p>
+              Best suited to selective channel rollout where product story and positioning quality matter more than discount volume.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Partner Support</h3>
+            <p>
+              Qualified partners can request a deck, product overview materials, and practical communication support for channel teams.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Next Step</h3>
+            <p>
+              Share your market scope and channel profile. We will respond with relevant partnership details and next-step guidance.
+            </p>
+          </article>
+        </div>
+
+        <div class="partner-cta-row">
+          <a class="btn gold" href="#partnership-form">Request Partnership Deck</a>
+          <a class="btn dark" href="#partnership-form">Start Distributor Inquiry</a>
+          <a class="btn line" href="#contact">Contact for Market Cooperation</a>
         </div>
       </div>
     </section>
 
-    <section id="distributor" class="section alt">
-      <div class="container two-col">
-        <div>
-          <p class="eyebrow" data-i18n="distributor.eyebrow"></p>
-          <h2 data-i18n="distributor.title"></h2>
-          <p data-i18n="distributor.body"></p>
-          <ul id="distributor-points"></ul>
+    <section id="faq" class="section">
+      <div class="container reveal">
+        <div class="section-head narrow">
+          <p class="kicker">FAQ</p>
+          <h2>Common Questions</h2>
         </div>
-        <div class="card">
-          <h3 data-i18n="distributor.formTitle"></h3>
-          <p data-i18n="distributor.formBody"></p>
-          <div class="contact-box">
-            <div><strong>Email:</strong> <a href="mailto:pityhappy@gmail.com">pityhappy@gmail.com</a></div>
-            <div><strong>WhatsApp:</strong> <a href="https://wa.me/85251758291" target="_blank" rel="noreferrer">+852 5175 8291</a></div>
-          </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>What is Cynomorium Herba Pills?</summary>
+            <p>It is a premium herbal product in a honey-based pill format, positioned for mature men’s vitality and wellness support.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What makes it different from typical supplements?</summary>
+            <p>Its distinction comes from a whole-plant route, recognizable format, and a focused single-product brand approach.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is it an extract-only product?</summary>
+            <p>No. The product is positioned around a whole-plant route rather than an extract-only concept.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Who is it designed for?</summary>
+            <p>It is designed for mature men seeking vitality, confidence, and wellness-focused daily support.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which channels are most suitable?</summary>
+            <p>Premium wellness retail, boutique channels, private-member models, and selected distributor networks.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How can I request partnership materials?</summary>
+            <p>Submit a distributor inquiry form or contact us directly by email or WhatsApp for the partnership deck.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container two-col">
-        <div>
-          <p class="eyebrow" data-i18n="contact.eyebrow"></p>
-          <h2 data-i18n="contact.title"></h2>
-          <p data-i18n="contact.body"></p>
-        </div>
-        <div class="card">
-          <div class="info-line"><strong>Email</strong><span>pityhappy@gmail.com</span></div>
-          <div class="info-line"><strong>WhatsApp</strong><span>+852 5175 8291</span></div>
-          <div class="info-line"><strong data-i18n="contact.addressLabel"></strong><span>ROOM 1006, 10/F., Po Yip Building, 23 Hing Yip Street</span></div>
-        </div>
+    <section id="contact" class="section section-panel">
+      <div class="container contact-layout reveal">
+        <article>
+          <p class="kicker">Contact</p>
+          <h2>Start the Partnership Conversation</h2>
+          <p>
+            This inquiry channel is built for distributors, channel operators, and market partners.
+            Share your market scope and we will respond with relevant information.
+          </p>
+
+          <div class="contact-card card">
+            <div><strong>Company</strong><span>Fengze Wellness (HK) Limited</span></div>
+            <div><strong>Email</strong><a href="mailto:pityhappy@gmail.com">pityhappy@gmail.com</a></div>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/85251758291" target="_blank" rel="noreferrer">+852 5175 8291</a></div>
+            <div><strong>Address</strong><span>ROOM 1006, 10/F., Po Yip Building, 23 Hing Yip Street, Hong Kong</span></div>
+          </div>
+        </article>
+
+        <form id="partnership-form" class="card inquiry-form" novalidate method="POST" action="https://formsubmit.co/ajax/pityhappy@gmail.com">
+          <h3>Distributor Inquiry Form <span>Partner Application</span></h3>
+          <p>Please provide your channel profile to receive partnership and product materials.</p>
+          <input type="hidden" name="_subject" value="New Partnership Inquiry - Cynomorium Herba Pills" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="site_language" value="en" />
+          <input class="hp-field" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+          <label>
+            Full Name
+            <input type="text" name="fullName" required placeholder="Your name" />
+          </label>
+          <label>
+            Company
+            <input type="text" name="company" required placeholder="Company / Organization" />
+          </label>
+          <label>
+            Country / Market
+            <input type="text" name="market" required placeholder="e.g., UAE, Singapore, Malaysia" />
+          </label>
+          <label>
+            Channel Type
+            <select name="channelType" required>
+              <option value="">Select channel type</option>
+              <option>Distributor</option>
+              <option>Wholesaler</option>
+              <option>Retail Chain</option>
+              <option>Clinic / Wellness Center</option>
+              <option>Private Membership Channel</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="name@company.com" />
+          </label>
+          <label>
+            WhatsApp / Phone
+            <input type="text" name="whatsapp" placeholder="+00 0000 0000" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us about your channel and cooperation goals."></textarea>
+          </label>
+
+          <label class="checkline">
+            <input type="checkbox" name="deck" checked />
+            Request Partnership Deck
+          </label>
+
+          <button class="btn gold" type="submit">Submit Inquiry</button>
+          <p class="form-note">We respond to qualified partnership requests as quickly as possible.</p>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© <span id="year"></span> Fengze Wellness (HK) Limited</div>
-      <div class="footer-note" data-i18n="footer.note"></div>
+    <div class="container footer-grid">
+      <div>
+        <strong>Fengze Wellness</strong>
+        <p>Single Hero Product for Premium Wellness Channels</p>
+      </div>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#quality">Quality</a>
+        <a href="#partnership">Partnership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-trust">
+        <p><strong>Distributor Inquiries:</strong> Request the deck or contact our team directly.</p>
+        <p><strong>Email:</strong> <a href="mailto:pityhappy@gmail.com">pityhappy@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/85251758291" target="_blank" rel="noreferrer">+852 5175 8291</a></p>
+      </div>
+
+      <p class="compliance-note">
+        Public information is provided for product and partnership communication only. Statements on this site are not intended to diagnose, treat, cure, or prevent any disease.
+      </p>
+      <p class="copyright">© <span id="year"></span> Fengze Wellness (HK) Limited. All rights reserved.</p>
     </div>
   </footer>
 
