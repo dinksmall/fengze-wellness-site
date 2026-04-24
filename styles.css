@@ -642,6 +642,97 @@ p {
   height: 100%;
 }
 
+.formula-section {
+  padding-top: 88px;
+  padding-bottom: 96px;
+  background:
+    linear-gradient(180deg, rgba(8, 15, 12, 0.18), rgba(215, 182, 111, 0.035)),
+    rgba(255, 255, 255, 0.01);
+  border-top: 1px solid rgba(215, 182, 111, 0.12);
+  border-bottom: 1px solid rgba(215, 182, 111, 0.12);
+}
+
+.formula-layout {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.formula-copy {
+  max-width: 520px;
+}
+
+.formula-copy h2 {
+  max-width: 12ch;
+}
+
+.formula-copy p + p {
+  margin-top: 14px;
+}
+
+.formula-points {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.formula-points li {
+  position: relative;
+  padding: 11px 12px 11px 34px;
+  border: 1px solid rgba(215, 182, 111, 0.22);
+  border-radius: 13px;
+  color: #dbe7dd;
+  background: rgba(10, 18, 15, 0.54);
+  font-size: 0.92rem;
+}
+
+.formula-points li::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 1.18em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(215, 182, 111, 0.12);
+}
+
+.formula-visual {
+  border-radius: 24px;
+  padding: 14px;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.08), transparent 52%),
+    linear-gradient(165deg, rgba(31, 49, 39, 0.98), rgba(8, 15, 12, 0.98));
+}
+
+.formula-visual::after {
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.06), transparent 34%, transparent 72%, rgba(0, 0, 0, 0.22));
+}
+
+.formula-visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 940px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #f8f8f2;
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.36);
+}
+
+.formula-visual figcaption {
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
+  color: #b8c7bd;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
 .different-primary {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1053,6 +1144,7 @@ textarea:focus {
   .hero-layout,
   .product-opening,
   .product-bottom,
+  .formula-layout,
   .story-grid,
   .partnership-layout,
   .contact-layout {
@@ -1100,6 +1192,14 @@ textarea:focus {
   .quality-close {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .formula-copy {
+    max-width: 760px;
+  }
+
+  .formula-copy h2 {
+    max-width: 18ch;
   }
 
   .process-flow {
@@ -1195,5 +1295,19 @@ textarea:focus {
 
   .quality-section .quality-process li {
     min-height: 0;
+  }
+
+  .formula-section {
+    padding-top: 72px;
+    padding-bottom: 78px;
+  }
+
+  .formula-visual {
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .formula-visual img {
+    border-radius: 12px;
   }
 }
