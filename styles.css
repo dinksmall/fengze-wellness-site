@@ -685,6 +685,19 @@ p {
   animation: honey-pill-eat 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
 }
 
+.pinch-hand {
+  position: absolute;
+  left: calc(50% - 17px);
+  top: calc(52% + 16px);
+  width: 34px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f3d7b8, #d9ab83);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  animation: pinch-hand-move 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
+}
+
 .inner-cap {
   position: absolute;
   left: calc(50% - 30px);
@@ -745,6 +758,20 @@ p {
   animation: mouth-show 6.8s ease-in-out infinite;
 }
 
+.mouth-bite {
+  position: absolute;
+  right: 13%;
+  top: calc(52% - 3px);
+  width: 32px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(230, 197, 125, 0.95);
+  transform: scaleX(0.2);
+  transform-origin: left center;
+  opacity: 0;
+  animation: mouth-bite-close 6.8s ease-in-out infinite;
+}
+
 @keyframes wax-whole-hide {
   0%, 16% { opacity: 1; transform: scale(1) rotate(0deg); }
   20% { opacity: 1; transform: scale(0.98) rotate(-3deg); }
@@ -781,6 +808,15 @@ p {
   88%, 100% { transform: translate(84%, -50%) scale(0.72); opacity: 0; }
 }
 
+@keyframes pinch-hand-move {
+  0%, 34% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  40%, 56% { opacity: 0.9; transform: translate(0, 0) rotate(0deg); }
+  64% { opacity: 0.9; transform: translate(26px, -4px) rotate(-6deg); }
+  74% { opacity: 0.95; transform: translate(58px, -8px) rotate(-8deg); }
+  82% { opacity: 0.95; transform: translate(84px, -10px) rotate(-10deg); }
+  90%, 100% { opacity: 0; transform: translate(90px, -10px) rotate(-10deg); }
+}
+
 @keyframes inner-cap-open {
   0%, 38% { opacity: 0; transform: scale(0.96); }
   44%, 54% { opacity: 0.88; transform: scale(1); }
@@ -804,6 +840,13 @@ p {
   0%, 64% { opacity: 0; }
   70%, 86% { opacity: 0.95; }
   100% { opacity: 0; }
+}
+
+@keyframes mouth-bite-close {
+  0%, 74% { opacity: 0; transform: scaleX(0.2); }
+  80% { opacity: 0.95; transform: scaleX(0.9); }
+  86% { opacity: 0.85; transform: scaleX(0.35); }
+  100% { opacity: 0; transform: scaleX(0.2); }
 }
 
 .product-story-grid article {
@@ -1547,7 +1590,9 @@ textarea:focus {
   .wax-shell-whole,
   .wax-crack-line,
   .inner-cap,
-  .wrapper-film {
+  .wrapper-film,
+  .pinch-hand,
+  .mouth-bite {
     animation: none;
   }
 
