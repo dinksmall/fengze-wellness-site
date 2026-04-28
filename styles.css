@@ -679,7 +679,7 @@ p {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background:
-    radial-gradient(circle at 36% 32%, #e0b15f 0, #a66e27 58%, #6d4618 100%);
+    radial-gradient(circle at 36% 32%, #6a4522 0, #3f2814 58%, #201208 100%);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.42);
   opacity: 0;
   animation: honey-pill-eat 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
