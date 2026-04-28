@@ -579,6 +579,105 @@ p {
   gap: 16px;
 }
 
+.usage-demo-card {
+  margin-top: 20px;
+}
+
+.usage-demo-note {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 0.84rem;
+  color: #c8d6cd;
+}
+
+.wax-eating-demo {
+  margin-top: 14px;
+  min-height: 180px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(215, 182, 111, 0.24);
+  background:
+    radial-gradient(circle at 22% 22%, rgba(255, 255, 255, 0.12), transparent 42%),
+    linear-gradient(165deg, rgba(10, 19, 15, 0.96), rgba(18, 34, 28, 0.88));
+}
+
+.wax-shell {
+  position: absolute;
+  top: 52%;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 34% 32%, #fffdf7 0, #f5f0df 55%, #d6cbb2 100%);
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.36);
+  transform: translateY(-50%);
+  animation: wax-shell-open 4.8s ease-in-out infinite;
+}
+
+.wax-shell-left {
+  left: calc(50% - 50px);
+  clip-path: ellipse(62% 50% at 24% 50%);
+}
+
+.wax-shell-right {
+  left: calc(50% - 26px);
+  clip-path: ellipse(62% 50% at 76% 50%);
+  animation-name: wax-shell-open-right;
+}
+
+.honey-pill-core {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(circle at 36% 32%, #f2d586 0, #c9932d 58%, #8b5f1d 100%);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.42);
+  animation: honey-pill-eat 4.8s ease-in-out infinite;
+}
+
+.bite-mark {
+  position: absolute;
+  top: calc(52% - 26px);
+  left: calc(50% + 7px);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(12, 20, 17, 0.94);
+  opacity: 0;
+  animation: bite-mark-show 4.8s ease-in-out infinite;
+}
+
+@keyframes wax-shell-open {
+  0%, 22% { transform: translateY(-50%) translateX(0); }
+  40%, 70% { transform: translateY(-50%) translateX(-32px); }
+  85%, 100% { transform: translateY(-50%) translateX(0); }
+}
+
+@keyframes wax-shell-open-right {
+  0%, 22% { transform: translateY(-50%) translateX(0); }
+  40%, 70% { transform: translateY(-50%) translateX(32px); }
+  85%, 100% { transform: translateY(-50%) translateX(0); }
+}
+
+@keyframes honey-pill-eat {
+  0%, 26% { transform: translate(-50%, -50%) scale(1); opacity: 0.95; }
+  40%, 60% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  70% { transform: translate(-50%, -50%) scale(0.86); opacity: 0.9; }
+  82% { transform: translate(-50%, -50%) scale(0.76); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.95; }
+}
+
+@keyframes bite-mark-show {
+  0%, 62% { opacity: 0; transform: scale(0.6); }
+  70%, 84% { opacity: 0.94; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.6); }
+}
+
 .product-story-grid article {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
@@ -1309,5 +1408,25 @@ textarea:focus {
 
   .formula-visual img {
     border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wax-shell,
+  .honey-pill-core,
+  .bite-mark {
+    animation: none;
+  }
+
+  .wax-shell-left {
+    transform: translateY(-50%) translateX(-22px);
+  }
+
+  .wax-shell-right {
+    transform: translateY(-50%) translateX(22px);
+  }
+
+  .bite-mark {
+    opacity: 0.9;
   }
 }
