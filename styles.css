@@ -685,19 +685,6 @@ p {
   animation: honey-pill-eat 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
 }
 
-.pinch-hand {
-  position: absolute;
-  left: calc(50% - 17px);
-  top: calc(52% + 16px);
-  width: 34px;
-  height: 18px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #f3d7b8, #d9ab83);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.24);
-  opacity: 0;
-  animation: pinch-hand-move 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
-}
-
 .inner-cap {
   position: absolute;
   left: calc(50% - 30px);
@@ -721,55 +708,6 @@ p {
   border: 1px dashed rgba(237, 230, 206, 0.8);
   opacity: 0;
   animation: wrapper-film-off 6.8s ease-in-out infinite;
-}
-
-.eat-arrow {
-  position: absolute;
-  left: 58%;
-  top: 52%;
-  width: 48px;
-  height: 2px;
-  transform: translateY(-50%);
-  background: linear-gradient(90deg, rgba(214, 173, 85, 0), rgba(214, 173, 85, 0.9));
-  opacity: 0;
-  animation: eat-arrow-show 6.8s ease-in-out infinite;
-}
-
-.eat-arrow::after {
-  content: "";
-  position: absolute;
-  right: -1px;
-  top: -4px;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 8px solid rgba(214, 173, 85, 0.9);
-}
-
-.mouth-icon {
-  position: absolute;
-  right: 14%;
-  top: calc(52% - 15px);
-  width: 30px;
-  height: 24px;
-  border: 2px solid rgba(230, 197, 125, 0.86);
-  border-top: 0;
-  border-radius: 0 0 16px 16px;
-  opacity: 0;
-  animation: mouth-show 6.8s ease-in-out infinite;
-}
-
-.mouth-bite {
-  position: absolute;
-  right: 13%;
-  top: calc(52% - 3px);
-  width: 32px;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(230, 197, 125, 0.95);
-  transform: scaleX(0.2);
-  transform-origin: left center;
-  opacity: 0;
-  animation: mouth-bite-close 6.8s ease-in-out infinite;
 }
 
 @keyframes wax-whole-hide {
@@ -808,15 +746,6 @@ p {
   88%, 100% { transform: translate(84%, -50%) scale(0.72); opacity: 0; }
 }
 
-@keyframes pinch-hand-move {
-  0%, 34% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
-  40%, 56% { opacity: 0.9; transform: translate(0, 0) rotate(0deg); }
-  64% { opacity: 0.9; transform: translate(26px, -4px) rotate(-6deg); }
-  74% { opacity: 0.95; transform: translate(58px, -8px) rotate(-8deg); }
-  82% { opacity: 0.95; transform: translate(84px, -10px) rotate(-10deg); }
-  90%, 100% { opacity: 0; transform: translate(90px, -10px) rotate(-10deg); }
-}
-
 @keyframes inner-cap-open {
   0%, 38% { opacity: 0; transform: scale(0.96); }
   44%, 54% { opacity: 0.88; transform: scale(1); }
@@ -830,23 +759,248 @@ p {
   72%, 100% { opacity: 0; transform: translateY(-18px) scale(0.8); }
 }
 
-@keyframes eat-arrow-show {
-  0%, 58% { opacity: 0; }
-  66%, 82% { opacity: 1; }
-  88%, 100% { opacity: 0; }
+.wax-eating-demo {
+  min-height: 230px;
+  background:
+    radial-gradient(circle at 22% 36%, rgba(255, 255, 255, 0.12), transparent 34%),
+    radial-gradient(circle at 82% 42%, rgba(215, 182, 111, 0.1), transparent 30%),
+    linear-gradient(165deg, rgba(10, 19, 15, 0.96), rgba(18, 34, 28, 0.88));
 }
 
-@keyframes mouth-show {
-  0%, 64% { opacity: 0; }
-  70%, 86% { opacity: 0.95; }
-  100% { opacity: 0; }
+.press-palm {
+  position: absolute;
+  left: calc(24% - 46px);
+  top: 8%;
+  width: 92px;
+  height: 38px;
+  border-radius: 28px 28px 18px 18px;
+  background: linear-gradient(180deg, #f2d2b1, #d6a77d);
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  animation: press-palm-motion 8.4s cubic-bezier(0.35, 0, 0.2, 1) infinite;
+  z-index: 6;
 }
 
-@keyframes mouth-bite-close {
-  0%, 74% { opacity: 0; transform: scaleX(0.2); }
-  80% { opacity: 0.95; transform: scaleX(0.9); }
-  86% { opacity: 0.85; transform: scaleX(0.35); }
-  100% { opacity: 0; transform: scaleX(0.2); }
+.wax-shell-whole {
+  left: calc(24% - 42px);
+  top: calc(58% - 42px);
+  width: 84px;
+  height: 84px;
+  animation: wax-whole-hide 8.4s ease-in-out infinite;
+}
+
+.wax-crack-line {
+  left: calc(24% - 2px);
+  top: calc(58% - 28px);
+  height: 56px;
+  animation: wax-crack-show 8.4s ease-in-out infinite;
+}
+
+.wax-shell {
+  top: 58%;
+  animation-duration: 8.4s;
+}
+
+.wax-shell-left {
+  left: calc(24% - 52px);
+}
+
+.wax-shell-right {
+  left: calc(24% - 26px);
+}
+
+.split-hand {
+  position: absolute;
+  top: calc(58% + 22px);
+  width: 42px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f0d1b0, #d3a178);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  z-index: 6;
+}
+
+.split-hand-left {
+  left: calc(24% - 72px);
+  animation: split-hand-left-motion 8.4s ease-in-out infinite;
+}
+
+.split-hand-right {
+  left: calc(24% + 30px);
+  animation: split-hand-right-motion 8.4s ease-in-out infinite;
+}
+
+.inner-cap {
+  left: calc(24% - 30px);
+  top: calc(58% - 30px);
+  animation-duration: 8.4s;
+}
+
+.wrapper-film {
+  left: calc(24% - 24px);
+  top: calc(58% - 24px);
+  animation-duration: 8.4s;
+}
+
+.honey-pill-core {
+  left: 24%;
+  top: 58%;
+  width: 44px;
+  height: 44px;
+  animation: honey-pill-to-mouth 8.4s cubic-bezier(0.35, 0, 0.2, 1) infinite;
+  z-index: 5;
+}
+
+.carry-hand {
+  position: absolute;
+  left: calc(24% - 22px);
+  top: calc(58% + 18px);
+  width: 44px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f2d2b1, #d3a077);
+  box-shadow: 0 7px 11px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  animation: carry-hand-to-mouth 8.4s cubic-bezier(0.35, 0, 0.2, 1) infinite;
+  z-index: 4;
+}
+
+.carry-hand::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -9px;
+  width: 30px;
+  height: 13px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f6ddc1, #ddb086);
+  transform: rotate(-8deg);
+}
+
+.face-profile {
+  position: absolute;
+  right: 10%;
+  top: calc(58% - 48px);
+  width: 72px;
+  height: 96px;
+  border-radius: 42px 34px 38px 44px;
+  background: linear-gradient(135deg, #f0cba8, #bd8966);
+  opacity: 0;
+  animation: face-profile-show 8.4s ease-in-out infinite;
+  z-index: 3;
+}
+
+.face-profile::before {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 38px;
+  width: 18px;
+  height: 13px;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(135deg, #e6b88f, #b97e5d);
+}
+
+.face-profile::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 58px;
+  width: 22px;
+  height: 8px;
+  border-radius: 999px;
+  background: #5a241b;
+  transform-origin: left center;
+  animation: natural-mouth-open 8.4s ease-in-out infinite;
+}
+
+@keyframes press-palm-motion {
+  0%, 8% { opacity: 0; transform: translateY(-18px); }
+  14% { opacity: 0.95; transform: translateY(0); }
+  20% { opacity: 0.95; transform: translateY(16px) scaleY(0.92); }
+  28% { opacity: 0.85; transform: translateY(8px); }
+  34%, 100% { opacity: 0; transform: translateY(-12px); }
+}
+
+@keyframes wax-whole-hide {
+  0%, 16% { opacity: 1; transform: scale(1); }
+  22% { opacity: 1; transform: scale(0.96); }
+  30% { opacity: 1; transform: scale(1.01); }
+  38%, 100% { opacity: 0; transform: scale(0.96); }
+}
+
+@keyframes wax-crack-show {
+  0%, 18% { opacity: 0; transform: scaleY(0.2); }
+  24%, 34% { opacity: 0.9; transform: scaleY(1); }
+  42%, 100% { opacity: 0; transform: scaleY(1); }
+}
+
+@keyframes wax-shell-open {
+  0%, 30% { opacity: 0; transform: translateY(-50%) translateX(0) rotate(0deg); }
+  38% { opacity: 1; transform: translateY(-50%) translateX(-12px) rotate(-5deg); }
+  50%, 74% { opacity: 1; transform: translateY(-50%) translateX(-48px) rotate(-12deg); }
+  88%, 100% { opacity: 0; transform: translateY(-50%) translateX(-52px) rotate(-12deg); }
+}
+
+@keyframes wax-shell-open-right {
+  0%, 30% { opacity: 0; transform: translateY(-50%) translateX(0) rotate(0deg); }
+  38% { opacity: 1; transform: translateY(-50%) translateX(12px) rotate(5deg); }
+  50%, 74% { opacity: 1; transform: translateY(-50%) translateX(48px) rotate(12deg); }
+  88%, 100% { opacity: 0; transform: translateY(-50%) translateX(52px) rotate(12deg); }
+}
+
+@keyframes split-hand-left-motion {
+  0%, 30% { opacity: 0; transform: translateX(18px); }
+  38%, 56% { opacity: 0.9; transform: translateX(0); }
+  68%, 100% { opacity: 0; transform: translateX(-22px); }
+}
+
+@keyframes split-hand-right-motion {
+  0%, 30% { opacity: 0; transform: translateX(-18px); }
+  38%, 56% { opacity: 0.9; transform: translateX(0); }
+  68%, 100% { opacity: 0; transform: translateX(22px); }
+}
+
+@keyframes inner-cap-open {
+  0%, 42% { opacity: 0; transform: scale(0.96); }
+  48%, 56% { opacity: 0.86; transform: scale(1); }
+  66%, 100% { opacity: 0; transform: translateX(-22px) scale(0.92); }
+}
+
+@keyframes wrapper-film-off {
+  0%, 50% { opacity: 0; transform: scale(0.96); }
+  58%, 66% { opacity: 0.82; transform: scale(1); }
+  74%, 100% { opacity: 0; transform: translateY(-20px) scale(0.78); }
+}
+
+@keyframes face-profile-show {
+  0%, 54% { opacity: 0; transform: translateX(10px); }
+  62%, 88% { opacity: 0.92; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(10px); }
+}
+
+@keyframes honey-pill-to-mouth {
+  0%, 48% { left: 24%; opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  54%, 62% { left: 24%; opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  72% { left: 54%; opacity: 1; transform: translate(-50%, -62%) scale(0.92); }
+  82% { left: calc(90% - 26px); opacity: 1; transform: translate(-50%, -68%) scale(0.82); }
+  88%, 100% { left: calc(90% - 20px); opacity: 0; transform: translate(-50%, -70%) scale(0.62); }
+}
+
+@keyframes carry-hand-to-mouth {
+  0%, 50% { left: calc(24% - 22px); opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  56%, 64% { left: calc(24% - 22px); opacity: 0.92; transform: translate(0, 0) rotate(0deg); }
+  74% { left: calc(54% - 22px); opacity: 0.92; transform: translate(0, -10px) rotate(-8deg); }
+  84% { left: calc(90% - 54px); opacity: 0.92; transform: translate(0, -14px) rotate(-12deg); }
+  92%, 100% { left: calc(90% - 42px); opacity: 0; transform: translate(0, -14px) rotate(-12deg); }
+}
+
+@keyframes natural-mouth-open {
+  0%, 68% { transform: scaleX(0.35) scaleY(0.8); }
+  76% { transform: scaleX(1) scaleY(1.2); }
+  86% { transform: scaleX(0.24) scaleY(0.55); }
+  100% { transform: scaleX(0.35) scaleY(0.8); }
 }
 
 .product-story-grid article {
@@ -1585,14 +1739,15 @@ textarea:focus {
 @media (prefers-reduced-motion: reduce) {
   .wax-shell,
   .honey-pill-core,
-  .eat-arrow,
-  .mouth-icon,
   .wax-shell-whole,
   .wax-crack-line,
   .inner-cap,
   .wrapper-film,
-  .pinch-hand,
-  .mouth-bite {
+  .press-palm,
+  .split-hand,
+  .carry-hand,
+  .face-profile,
+  .face-profile::after {
     animation: none;
   }
 
@@ -1619,8 +1774,13 @@ textarea:focus {
     transform: translate(-50%, -50%);
   }
 
-  .eat-arrow,
-  .mouth-icon {
+  .carry-hand,
+  .face-profile {
     opacity: 0.9;
+  }
+
+  .press-palm,
+  .split-hand {
+    opacity: 0;
   }
 }
