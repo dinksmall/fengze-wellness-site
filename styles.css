@@ -583,11 +583,29 @@ p {
   margin-top: 20px;
 }
 
+.usage-steps {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: #d7e2da;
+  display: grid;
+  gap: 6px;
+}
+
+.usage-steps li {
+  line-height: 1.5;
+}
+
 .usage-demo-note {
   margin-top: 14px;
   margin-bottom: 0;
   font-size: 0.84rem;
   color: #c8d6cd;
+}
+
+.usage-warning {
+  margin: 10px 0 0;
+  font-size: 0.86rem;
+  color: #f1cd92;
 }
 
 .wax-eating-demo {
@@ -624,7 +642,7 @@ p {
   border-radius: 999px;
   background: rgba(127, 103, 63, 0.8);
   opacity: 0;
-  animation: wax-crack-show 5.6s ease-in-out infinite;
+  animation: wax-crack-show 6.8s ease-in-out infinite;
 }
 
 .wax-shell {
@@ -638,7 +656,7 @@ p {
   box-shadow: 0 14px 20px rgba(0, 0, 0, 0.36);
   transform: translateY(-50%);
   opacity: 0;
-  animation: wax-shell-open 5.6s ease-in-out infinite;
+  animation: wax-shell-open 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
 }
 
 .wax-shell-left {
@@ -664,7 +682,32 @@ p {
     radial-gradient(circle at 36% 32%, #e0b15f 0, #a66e27 58%, #6d4618 100%);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.42);
   opacity: 0;
-  animation: honey-pill-eat 5.6s ease-in-out infinite;
+  animation: honey-pill-eat 6.8s cubic-bezier(0.35, 0, 0.2, 1) infinite;
+}
+
+.inner-cap {
+  position: absolute;
+  left: calc(50% - 30px);
+  top: calc(52% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(208, 227, 232, 0.78);
+  background: radial-gradient(circle at 34% 32%, rgba(223, 237, 238, 0.34), rgba(168, 192, 198, 0.1));
+  opacity: 0;
+  animation: inner-cap-open 6.8s ease-in-out infinite;
+}
+
+.wrapper-film {
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(52% - 24px);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px dashed rgba(237, 230, 206, 0.8);
+  opacity: 0;
+  animation: wrapper-film-off 6.8s ease-in-out infinite;
 }
 
 .eat-arrow {
@@ -676,7 +719,7 @@ p {
   transform: translateY(-50%);
   background: linear-gradient(90deg, rgba(214, 173, 85, 0), rgba(214, 173, 85, 0.9));
   opacity: 0;
-  animation: eat-arrow-show 5.6s ease-in-out infinite;
+  animation: eat-arrow-show 6.8s ease-in-out infinite;
 }
 
 .eat-arrow::after {
@@ -699,51 +742,67 @@ p {
   border-top: 0;
   border-radius: 0 0 16px 16px;
   opacity: 0;
-  animation: mouth-show 5.6s ease-in-out infinite;
+  animation: mouth-show 6.8s ease-in-out infinite;
 }
 
 @keyframes wax-whole-hide {
-  0%, 22% { opacity: 1; transform: scale(1); }
-  27%, 100% { opacity: 0; transform: scale(0.96); }
+  0%, 16% { opacity: 1; transform: scale(1) rotate(0deg); }
+  20% { opacity: 1; transform: scale(0.98) rotate(-3deg); }
+  24% { opacity: 1; transform: scale(1.01) rotate(2deg); }
+  30%, 100% { opacity: 0; transform: scale(0.95); }
 }
 
 @keyframes wax-crack-show {
   0%, 14% { opacity: 0; }
-  18%, 25% { opacity: 0.86; }
-  30%, 100% { opacity: 0; }
+  20%, 30% { opacity: 0.9; }
+  36%, 100% { opacity: 0; }
 }
 
 @keyframes wax-shell-open {
-  0%, 22% { opacity: 0; transform: translateY(-50%) translateX(0); }
-  27%, 40% { opacity: 1; transform: translateY(-50%) translateX(-18px); }
-  48%, 72% { opacity: 1; transform: translateY(-50%) translateX(-42px); }
-  84%, 100% { opacity: 0; transform: translateY(-50%) translateX(-46px); }
+  0%, 26% { opacity: 0; transform: translateY(-50%) translateX(0) rotate(0deg); }
+  32%, 46% { opacity: 1; transform: translateY(-50%) translateX(-16px) rotate(-6deg); }
+  52%, 78% { opacity: 1; transform: translateY(-50%) translateX(-44px) rotate(-10deg); }
+  88%, 100% { opacity: 0; transform: translateY(-50%) translateX(-44px) rotate(-10deg); }
 }
 
 @keyframes wax-shell-open-right {
-  0%, 22% { opacity: 0; transform: translateY(-50%) translateX(0); }
-  27%, 40% { opacity: 1; transform: translateY(-50%) translateX(18px); }
-  48%, 72% { opacity: 1; transform: translateY(-50%) translateX(42px); }
-  84%, 100% { opacity: 0; transform: translateY(-50%) translateX(46px); }
+  0%, 26% { opacity: 0; transform: translateY(-50%) translateX(0) rotate(0deg); }
+  32%, 46% { opacity: 1; transform: translateY(-50%) translateX(16px) rotate(6deg); }
+  52%, 78% { opacity: 1; transform: translateY(-50%) translateX(44px) rotate(10deg); }
+  88%, 100% { opacity: 0; transform: translateY(-50%) translateX(44px) rotate(10deg); }
 }
 
 @keyframes honey-pill-eat {
-  0%, 26% { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
-  30%, 50% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-  60% { transform: translate(-10%, -50%) scale(0.95); opacity: 1; }
-  74% { transform: translate(65%, -50%) scale(0.86); opacity: 1; }
-  82%, 100% { transform: translate(80%, -50%) scale(0.7); opacity: 0; }
+  0%, 30% { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
+  36%, 54% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  62% { transform: translate(-30%, -50%) scale(0.98); opacity: 1; }
+  72% { transform: translate(28%, -50%) scale(0.9); opacity: 1; }
+  80% { transform: translate(74%, -50%) scale(0.78); opacity: 1; }
+  88%, 100% { transform: translate(84%, -50%) scale(0.72); opacity: 0; }
+}
+
+@keyframes inner-cap-open {
+  0%, 38% { opacity: 0; transform: scale(0.96); }
+  44%, 54% { opacity: 0.88; transform: scale(1); }
+  62% { opacity: 0.76; transform: translateX(-12px) scale(0.96); }
+  72%, 100% { opacity: 0; transform: translateX(-26px) scale(0.92); }
+}
+
+@keyframes wrapper-film-off {
+  0%, 48% { opacity: 0; transform: scale(0.96); }
+  56%, 64% { opacity: 0.85; transform: scale(1); }
+  72%, 100% { opacity: 0; transform: translateY(-18px) scale(0.8); }
 }
 
 @keyframes eat-arrow-show {
-  0%, 48% { opacity: 0; }
-  56%, 74% { opacity: 1; }
-  80%, 100% { opacity: 0; }
+  0%, 58% { opacity: 0; }
+  66%, 82% { opacity: 1; }
+  88%, 100% { opacity: 0; }
 }
 
 @keyframes mouth-show {
-  0%, 58% { opacity: 0; }
-  64%, 82% { opacity: 0.95; }
+  0%, 64% { opacity: 0; }
+  70%, 86% { opacity: 0.95; }
   100% { opacity: 0; }
 }
 
@@ -1486,7 +1545,9 @@ textarea:focus {
   .eat-arrow,
   .mouth-icon,
   .wax-shell-whole,
-  .wax-crack-line {
+  .wax-crack-line,
+  .inner-cap,
+  .wrapper-film {
     animation: none;
   }
 
