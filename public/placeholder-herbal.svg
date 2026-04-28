@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="0" x2="1140" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12231D"/>
+      <stop offset="1" stop-color="#0B1512"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="390" y1="220" x2="920" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DABD7B"/>
+      <stop offset="1" stop-color="#7EA06B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+  <rect x="72" y="72" width="1056" height="756" rx="26" stroke="#DABD7B" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M611 224C699 286 762 368 772 461C782 552 746 632 648 692C560 630 514 552 521 466C528 378 573 297 611 224Z" fill="url(#leaf)" fill-opacity=".65"/>
+  <path d="M602 305C600 441 577 544 532 653" stroke="#E9D8AE" stroke-opacity=".5" stroke-width="8" stroke-linecap="round"/>
+  <text x="600" y="770" fill="#D8C28B" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" letter-spacing="3">PREMIUM HERBAL IMAGE PLACEHOLDER</text>
+</svg>
