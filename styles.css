@@ -732,6 +732,57 @@ p {
   font-size: 0.86rem;
 }
 
+.regimen-position-card {
+  position: relative;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.4fr);
+  gap: 24px;
+  overflow: hidden;
+  border-color: rgba(215, 182, 111, 0.26);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(215, 182, 111, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(18, 44, 35, 0.9), rgba(8, 16, 13, 0.84));
+}
+
+.regimen-position-card::after {
+  content: "2.5mg";
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  color: rgba(242, 223, 174, 0.1);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.8rem, 8vw, 7.5rem);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.regimen-position-card h3 {
+  position: relative;
+  margin: 0;
+  max-width: 10ch;
+  font-size: clamp(1.45rem, 2vw, 2.1rem);
+  line-height: 1.1;
+}
+
+.regimen-position-copy {
+  position: relative;
+  display: grid;
+  gap: 12px;
+}
+
+.regimen-position-copy p {
+  margin: 0;
+  color: #d4dfd7;
+}
+
+.regimen-position-copy .regimen-position-note {
+  padding-top: 12px;
+  border-top: 1px solid rgba(215, 182, 111, 0.18);
+  color: #aebdb4;
+  font-size: 0.86rem;
+}
+
 .wax-shadow {
   width: 92px;
   height: 18px;
@@ -1709,6 +1760,22 @@ textarea:focus {
 
   .usage-method-card {
     padding: 20px;
+  }
+
+  .regimen-position-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .regimen-position-card h3 {
+    max-width: 14ch;
+  }
+
+  .regimen-position-card::after {
+    right: 14px;
+    top: 12px;
+    font-size: 4.2rem;
   }
 
   .usage-step-card {
